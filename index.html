@@ -1,0 +1,185 @@
+---
+title: index
+---
+<!-- temporarily using blog_all.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tommaso Pieranti</title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    
+    <meta name='description' content='Tommaso Pieranti is a Mathematical Engineering graduate.'>
+    <meta name='keywords' content='
+        machine learning,
+        statistical machine learning,
+        mathematical finance,
+        statistics,
+        linear algebra,
+        computer science,
+        stochastic processes,
+        probability
+    '>
+    <meta name='author' content='Tommaso Pieranti'>
+
+    <link rel='stylesheet' type='text/css' href='/css/home.css'/>
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+</head>
+<body>
+    {% comment %}
+    {% include nav.html %}
+    {% endcomment %} 
+    <div id='landing'>
+    <h1>Tommaso Pieranti</h1>
+    <ul id='links'>
+        <li><a href='https://www.linkedin.com/in/tommaso-pieranti-455a7929b/' target='_blank'>linkedin</a></li>
+        <!-- <li><a href='assets/2025Nov_CV_Hong.pdf' target='_blank'>cv</a></li> -->
+        <li><a href='https://github.com/TommasoPieranti' target='_blank'>github</a></li>
+        <!-- <li><a href='https://scholar.google.com/citations?user=sjZXW24AAAAJ&hl=en&oi=ao' target='_blank'>google scholar</a></li> -->
+        
+        <li id='contact'>tommaso.pieranti@proton.me</li>
+        <!-- <li><a href='/blog'>blog</a></li> -->
+    </ul>
+    <div id="bio-container">
+        <p id="bio">
+            I am a Mathematical Engineering graduate cum laude from <a href="https://www.polimi.it/en/" target="_blank" rel="noopener noreferrer">Politecnico di Milano</a> majoring in <a href="https://www.qfinlab.polimi.it/" target = "blank" rel = "noopener noreferrer">Quantitative Finance</a>, based in <a href="https://en.wikipedia.org/wiki/Milan" target="_blank" rel="noopener noreferrer">Milan</a>, Italy, with international experience at <a>
+            <a href="https://www.tudelft.nl/en/" target="_blank" rel="noopener noreferrer">TU Delft</a>, in The Netherlands. 
+            <br><span style="display: block; height: 1em;"></span>
+            My master's thesis focused on developing an expansion of the Pontryagin's Maximum Principle for stochastic optimal control problems. It extended existing results to cases with the time horizon is part of the optimization.            
+            During my studies, I specialized in stochastic processes, mathematical finance and financial engineering, implementing Python soutions for predictive modeling, time series analysis, and risk assessment problems.
+            <br><span style="display: block; height: 1em;"></span> <!-- Extra blank line -->
+            <!-- Topics that excite me are optimization, geometric representation, physical simulation and interpretable and customizable generative models. Check out my <a href='#blog-posts'>blog posts</a>.  -->
+        </p>
+        <img id="profile-image" src="\assets\images\IMG_2238.jpg" alt="Tommaso Pieranti" style="filter: brightness(1.25)">
+    </div>
+
+    <!-- Publications and Projects Section -->
+    <div id="publications">
+        <h2>Publications & Projects</h2>
+        
+        <div class = "publication-item">
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="{{ site.baseurl }}{% post_url 2026-02-02-Thesis %}"><strong>A variational approach to Pontryagin's Maximum Principle for stochastic optimal control and stopping problems.</strong></a>
+                    <span class="pub-venue">(Master's Thesis, Politecnico di Milano, 2025)</span>
+                </p>
+                <p class="pub-authors">
+                    <u>Tommaso Pieranti</u>
+                </p>
+                <p class="pub-description">
+                    This thesis develops a new variational approach to Pontryagin’s Maximum Principle for stochastic optimal control problems, including settings where the terminal time is itself a control variable.
+
+                    By combining functional analysis, Backward Stochastic Differential Equations (BSDEs), and control theory, it establishes necessary optimality conditions for random dynamical systems and illustrates them on quadratic control and natural resource valuation problems.
+                </p>
+                <p class="pub-links">
+                    <a href="assets/2025_12_Pieranti_Tesi.pdf" target = "_blank" rel = "noopener noreferrer">PDF</a>|
+                </p>
+            </div>
+        </div>
+
+
+        <div class="publication-item">
+            <div class="publication-image">
+                <img src="assets/images/GAN.gif" alt = "Teaser of GAN" class = "pub-gif">
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="{{ site.baseurl }}{% post_url 2024-07-15-TailGAN %}"><strong>Tail-GAN</strong>: Comprehensive review and Implementation Insights</a>
+                    <span class="pub-venue">(TU Delft 2024)</span>
+                </p>
+                <p class="pub-authors">
+                    <u>Tommaso Pieranti</u>
+                </p>
+                <p class="pub-description">
+                    This project provides a comprehensive review and implementation insights of Tail-GAN, a generative adversarial network (GAN) architecture designed for modeling heavy-tailed distributions in financial data. The study delves into the architecture, training procedures, and performance evaluation of Tail-GAN, highlighting its effectiveness in capturing extreme events and tail dependencies in financial time series.
+                </p>
+                <p class="pub-links">
+                    <a href="https://arxiv.org/abs/2203.01664" target = "_blank" rel = "noopener noreferrer">Original Paper</a>
+                    |
+                </p>
+            </div>
+        </div> 
+        
+        <!-- RevitAssembly -->
+        <!-- <div class="publication-item">
+            <div class="publication-image">
+                <video autoplay loop muted playsinline>
+                    <source src="assets/videos/window_gif.mp4" type="video/mp4">
+                    <source src="assets/videos/your-video.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="#"><strong>RevitAssembly</strong></a>
+                    <span class="pub-venue">(Autodesk 2023)</span>
+                </p>
+                <p class="pub-authors">
+                    <u>Chloe S.H. Hong</u>
+                </p>
+                <p class="pub-description">
+                    RevitAssembly is an assembly-aware graph representation for 3D models of building components involving geometric and semantic compositional constraints. Geometric data and tabular annotations from Revit 3D models are queried and linked to generate a dataset used for generative tasks.
+                </p>
+                <p class="pub-links">
+                    <a href="https://github.com/cshhong/revit_assembly">Code</a>
+                </p>
+            </div>
+        </div> -->
+
+        <!-- -->
+        <!-- <div class="publication-item">
+            <div class="publication-image">
+                <img src="assets/images/humanAIPartner.png" alt="Human-AI Partnership">
+            </div>
+            <div class="publication-content">
+                <p class="pub-title">
+                    <a href="#"><strong>Adaptation and Challenges in Human-AI Partnership for the Design of Complex Engineering Systems</strong></a>
+                    <span class="pub-venue">(IDETC/CIE 2023)</span>
+                </p>
+                <p class="pub-authors">
+                    Zeda Xu<sup>*</sup>, <u>Chloe S.H. Hong<sup>*</sup></u>, Nicolás F Soria Zurita, Joshua T Gyory, Gary Stump, Hannah Nolte, Jonathan Cagan, Christopher McComb
+                    <span class="pub-equal-contrib">(<sup>*</sup>equal contribution)</span>
+                </p>
+                <p class="pub-description">
+                    This work explores how Artificial Intelligence (AI) can be integrated into human team problem solving to create genuine human-AI partnerships capable of dynamic adaptability. Using the HyForm collaborative research platform, we show that AI design partners can act as proactive and reactive teammates in complex engineering tasks—adapting to unexpected changes comparably to humans, though with remaining challenges in coordination and communication.
+                </p>
+                <p class="pub-links">
+                    <a href="https://www.researchgate.net/profile/Zeda-Xu/publication/375810767_Adaptation_and_Challenges_in_Human-AI_Partnership_for_the_Design_of_Complex_Engineering_Systems/links/6581f08b6f6e450f19885ed0/Adaptation-and-Challenges-in-Human-AI-Partnership-for-the-Design-of-Complex-Engineering-Systems.pdf">Paper</a>
+                </p>
+            </div>
+        </div>
+         -->
+    </div>
+
+    <!-- Blog Posts Section -->
+    <!-- <div id="blog-posts">
+        <h2>Blog Posts</h2>
+        <div id='posts'>
+            {% for post in site.posts %}
+                <div class='post-row'>
+                    <p class='post-title'>
+                        <a href="{{ site.url }}{{ post.url }}">
+                            <div class="katex-container">
+                            {{ post.title }}
+                            </div>
+                        </a>
+                    </p>
+                    <p class='post-date'>
+                        {{ post.date | date_to_long_string }}
+                    </p>
+                    <p class='post-subtitle'>
+                        <div class="katex-container">
+                        {{ post.subtitle }}
+                        </div>
+                    </p>
+                </div>
+            {% endfor %}
+        </div>
+    </div> -->
+
+</div>
+</body>
+</html>
+
+
+

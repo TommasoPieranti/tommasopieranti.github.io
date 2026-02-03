@@ -1,0 +1,494 @@
+/* 
+https://cshhong.github.io/ 
+edit 2025-01-05
+edit from gregorygundersen.com
+ */
+
+body {
+	color: rgba(0, 0, 0, 0.8);
+	font-family: -apple-system, Helvetica, arial, sans-serif;
+	font-size: 14px;
+	margin: 10px;
+	padding: 0;
+}
+
+a {
+	color: rgba(0, 0, 0, 0.8);
+}
+a:hover {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+#bio-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: top; /* Align items vertically */
+    gap: 50px; /* Space between bio and image */
+	justify-content: space-between; /* Ensure spacing between bio text and image */
+    max-width: 100%; /* Ensure the container doesn't exceed the page width */
+    flex-wrap: nowrap; /* Prevent wrapping of the content */
+	margin: 30px 0; /* Add spacing above and below the bio */
+}
+
+#bio {
+    font-family: Helvetica, sans-serif; /* Use Helvetica explicitly */
+    font-size: 15px; /* Optional: Adjust font size to match or differentiate from body */
+    line-height: 1.5; /* Increase vertical spacing between lines */
+    color: rgba(0, 0, 0, 0.7); /* Match the text color of the body */
+    margin: 5px 0; /* Add spacing above and below the bio */
+    padding: 0; /* No extra padding */
+	flex: 1; /* Allow bio to take up remaining space */
+}
+#bio a {
+    color: #007acc; /* Link color */
+    text-decoration: none; /*Underline links*/
+}
+
+#bio a:hover {
+    color: #005a9c; /* Change color on hover */
+}
+
+#profile-image {
+    width: 220px; /* Adjust the size of the profile image */
+    height: 220px; /* Ensure the image is square */
+    border-radius: 50%; /* Optional: Make the image circular */
+    object-fit: cover; /* Crop the image if it doesn't fit perfectly */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+	margin: 10px 0; /* Add spacing above and below the bio */
+}
+
+
+h1 {
+	font-size: 30px;
+}
+#landing {
+	max-width: 900px;
+	margin: 119px auto;
+}
+
+
+#landing ul#links {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping to new line */
+    gap: 1rem; /* Space between items */
+    font-family: courier; /* Apply the same font style */
+    font-size: 1.0rem; /* Smaller font size */
+}
+
+#landing ul#links li {
+    display: inline; /* Inline items */
+}
+
+#landing ul#links li#contact {
+    flex-basis: 100%; /* Force contact to take full width */
+    margin-top: 0rem; /* Add small space above email */
+}
+
+#landing ul#links li a, /* Style Blog and Github links */
+#landing ul#links li#contact { /* Style Contact text */
+    /* text-decoration: underline; Underline all items */
+    color: inherit; /* Use the same color */
+}
+
+#landing ul#links li:not(:last-child):not(#contact)::after { /* Add vertical bar between items except the last and contact */
+    content: '	|'; /* Vertical bar */
+    margin-left: 0rem; /* Space before the bar */
+    margin-right: 0rem; /* Space after the bar */
+}
+
+/**/
+#landing .section ul {
+	padding-left: 15px;
+}
+.nav,
+#papers {
+	max-width: 700px;
+	margin: 0 auto 100px auto;
+}
+#papers {
+	margin-top: 83px;
+	line-height: 1.5em;
+}
+#papers h1 {
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+#papers .paper-row {
+	margin-bottom: 30px;
+}
+#papers .paper-title,
+#papers .paper-authors,
+#papers .paper-venue,
+#papers .paper-links {
+	margin: 0;
+}
+#papers .pub-links {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+}
+#papers .pub-links li {
+	display: inline;
+	padding-right: 10px;
+}
+.nav {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	line-height: 24px;  /* Matches blog nav line-height. */
+}
+.nav a {
+	color: rgba(0, 0, 0, 0.6);
+	text-decoration: none;
+	border-bottom: none;
+	font-size: 12px;
+}
+.nav a:hover {
+  	font-weight: bold;
+}
+.nav ul {
+	list-style-type: none;
+	padding: 0;
+}
+.nav ul li {
+	display: inline;
+	margin-right: 10px;
+	line-height: 1.5em;
+}
+
+/* Publications and Projects Section */
+#publications {
+	max-width: 900px;
+	margin: 60px auto 100px auto;
+}
+
+/* Blog Posts Section */
+#blog-posts {
+	max-width: 900px;
+	margin: 60px auto 100px auto;
+}
+
+/* Shared section heading style */
+#publications h2,
+#blog-posts h2 {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+.publication-item {
+	display: flex;
+	gap: 25px;
+	margin-bottom: 40px;
+	align-items: center; /* Center vertically */
+}
+
+.publication-image {
+	flex-shrink: 0;
+	width: 300px; /* Increased from 200px */
+	display: flex;
+	align-items: center; /* Center image/video vertically within container */
+	justify-content: center; /* Center horizontally if needed */
+}
+
+.publication-image img,
+.publication-image video {
+	width: 100%;
+	height: auto;
+	border: 1.2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	display: block; /* Removes any extra spacing */
+}
+
+.publication-image img,
+.publication-image video {
+	background-color: #000; /* Black background for videos */
+}
+
+.publication-content {
+	flex: 1;
+}
+
+.publication-content .pub-title {
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 8px; /* Reduced from 5px */
+	line-height: 1.2;
+}
+
+.publication-content .pub-title a {
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+.publication-content .pub-title a:hover {
+	color: #007acc;
+}
+
+.publication-content .pub-venue {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.6);
+	font-style: italic;
+	margin-left: 6px; /* Space between title and venue */
+	display: inline; /* Keep on same line */
+}
+
+.publication-content .pub-authors {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.7);
+	margin-bottom: 5px; /* Reduced from 5px */
+	margin-top: 0; /* Remove any top margin */
+	line-height: 1.1;
+}
+
+.publication-content .pub-authors a {
+	color: rgba(0, 0, 0, 0.7);
+	text-decoration: none;
+}
+
+.publication-content .pub-authors a:hover {
+	color: #007acc;
+}
+
+.publication-content .pub-equal-contrib {
+	display: inline;
+	margin-left: 6px;
+	font-size: 13px;
+	color: rgba(0, 0, 0, 0.4);
+	font-style: italic;
+}
+
+.publication-content .pub-description {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.5); /* Changed to darker grey from 0.7 */
+	line-height: 1.4;
+	margin-bottom: 5px;
+	margin-top: 0; /* Remove any top margin */
+	text-align: justify; /* Justify on desktop */
+}
+
+.publication-content .pub-links {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.publication-content .pub-links a {
+	color: #007acc;
+	text-decoration: none;
+	margin-right: 5px;
+}
+
+.publication-content .pub-links a:hover {
+	text-decoration: underline;
+}
+
+#blog-posts .post-row {
+	margin-bottom: 30px;
+}
+
+#blog-posts .post-title {
+	font-weight: bold;
+	margin-bottom: 5px;
+	margin-top: 0;
+}
+
+#blog-posts .post-title a {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.8);
+	text-decoration: none;
+}
+
+#blog-posts .post-title a:hover {
+	color: #007acc;
+	text-decoration: underline;
+}
+
+#blog-posts .post-date {
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 5px;
+	letter-spacing: 0.5px;
+}
+
+#blog-posts .post-subtitle {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.6);
+	line-height: 1.5;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+	body {
+		margin: 10px 20px; /* Add horizontal padding on mobile */
+	}
+	
+	#landing {
+		margin: 40px auto; /* Reduce top margin on mobile */
+		padding: 0 15px; /* Add padding */
+	}
+	
+	h1 {
+		font-size: 20px; /* Smaller heading on mobile */
+	}
+	
+	#bio-container {
+		flex-direction: column-reverse; /* Stack vertically with image on top */
+		gap: 20px; /* Reduce gap */
+		align-items: center; /* Center align items */
+	}
+	
+	#bio {
+		font-size: 16px; /* Increased by 2x from 11px */
+		text-align: left; /* Keep left-aligned */
+	}
+	
+	#profile-image {
+		width: 150px; /* Smaller image on mobile */
+		height: 150px;
+		margin: 10px 0;
+	}
+	
+	#landing ul#links {
+		flex-wrap: wrap; /* Allow wrapping if needed */
+		font-size: 1.275rem; /* Increased by 1.5x from 0.85rem */
+		gap: 0.8rem;
+	}
+	
+	.nav,
+	#papers {
+		margin: 0 15px 50px 15px; /* Adjust margins */
+	}
+	
+	#papers {
+		margin-top: 40px; /* Reduce top margin */
+	}
+	
+	#publications {
+		margin: 40px 15px 50px 15px;
+	}
+	
+	#blog-posts {
+		margin: 40px 15px 50px 15px;
+	}
+	
+	#publications h2,
+	#blog-posts h2 {
+		font-size: 27px; /* Increased by 1.5x from 18px */
+	}
+	
+	.publication-item {
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: 30px;
+	}
+	
+	.publication-image {
+		width: 100%;
+		max-width: 300px;
+	}
+	
+	.publication-content .pub-title {
+		font-size: 21px; /* Increased by 1.5x from 14px */
+	}
+	
+	.publication-content .pub-authors,
+	.publication-content .pub-description {
+		font-size: 16px; /* Match bio text size on tablet */
+		text-align: left; /* Left align on tablet */
+	}
+	
+	#blog-posts .post-title a {
+		font-size: 22.5px; /* Increased by 1.5x from 15px */
+	}
+	
+	#blog-posts .post-subtitle {
+		font-size: 16px; /* Increased by 1.5x from 13px */
+	}
+}
+
+/* Extra small screens (phones in portrait) */
+@media screen and (max-width: 480px) {
+	body {
+		margin: 10px 15px;
+	}
+	
+	#landing {
+		margin: 30px auto;
+		padding: 0 10px;
+	}
+	
+	h1 {
+		font-size: 27px; /* Increased by 1.5x from 18px */
+	}
+	
+	#bio {
+		font-size: 16px; /* Increased by 2x from 10px */
+		line-height: 1.4;
+	}
+	
+	#profile-image {
+		width: 200px;
+		height: 200px;
+	}
+	
+	#landing ul#links {
+		font-size: 1.125rem; /* Increased by 1.5x from 0.75rem */
+		gap: 0.6rem;
+	}
+	
+	#landing ul#links li:not(:last-child)::after {
+		margin-left: 0.3rem;
+		margin-right: 0.3rem;
+	}
+	
+	#publications {
+		margin: 30px 10px 40px 10px;
+	}
+	
+	#blog-posts {
+		margin: 30px 10px 40px 10px;
+	}
+	
+	#publications h2,
+	#blog-posts h2 {
+		font-size: 24px; /* Increased by 1.5x from 16px */
+	}
+	
+	.publication-content .pub-title {
+		font-size: 20px; /* Increased to be larger than content */
+		text-align: left;
+	}
+	
+	.publication-content .pub-authors,
+	.publication-content .pub-venue {
+		font-size: 18px; /* Increased by 1.5x from 12px */
+	}
+	
+	.publication-content .pub-description {
+		font-size: 16px; /* Match bio text size on phone */
+		text-align: left; /* Left align on phone */
+	}
+	
+	.publication-content .pub-links {
+		font-size: 18px; /* Increased by 1.5x from 12px */
+	}
+	
+	#blog-posts .post-title a {
+		font-size: 21px; /* Increased by 1.5x from 14px */
+	}
+	
+	#blog-posts .post-date {
+		font-size: 15px; /* Increased by 1.5x from 10px */
+	}
+	
+	#blog-posts .post-subtitle {
+		font-size: 16px; /* Increased by 1.5x from 12px */
+	}
+}

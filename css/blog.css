@@ -1,0 +1,347 @@
+html {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+body .content {
+  margin-bottom: 120px;
+}
+a {
+  color: rgba(0, 0, 0, 0.8);
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+h1 {
+  line-height: 1.2em;
+}
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.wrap {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.mono {
+  font-family: monospace;
+}
+.nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.nav a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 12px;
+}
+.nav a:hover {
+  font-weight: bold;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.front-matter {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.front-matter h4 {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline {
+  margin-right: 20px;
+  float: left;
+}
+.front-matter .bylines .byline h3,
+.front-matter .bylines .byline p {
+  margin: 0;
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline h3 {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.front-matter .bylines .byline p {
+  font-size: 10px;
+  line-height: 1.6em;
+}
+.article {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.article blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+}
+.article h2 {
+  font-size: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-top: 1em;
+}
+.article .figure {
+  /* border-top: 1px solid hsla(0, 0%, 0%, 0.2); */
+  /* border-bottom: 1px solid hsla(0, 0%, 0%, 0.2); */
+  padding: 5px 0;
+  text-align: center; /* Center-aligns the image */
+}
+
+.article .figure img {
+  display: inline-block; /* Ensures the image respects the center alignment */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.article .figure .caption {
+  padding-top: 5px;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.5em;
+  text-align: left; /* Align the caption to the left */
+  color: #a8a8a8; /* Caption text color */
+  max-width: 100%; /* Optional: Keeps caption width consistent with the image */
+  margin: 0 auto; /* Centers the caption container */
+  /* font-style: italic; Makes the caption text italic */
+}
+
+.article .figure .caption-label {
+  font-weight: bold;
+}
+
+/* Style for the figure-container */
+.article .figure-container {
+  display: flex; /* Enables side-by-side layout */
+  flex-direction: column; /* Ensures caption is below the images */
+  align-items: center; /* Centers the entire figure-container */
+  text-align: center; /* Centers the caption horizontally */
+  padding: 10px 0; /* Adds spacing around the figure container */
+}
+
+.article .figure-container .image-wrapper {
+  display: flex; /* Enables side-by-side layout for images */
+  gap: 10px; /* Adds spacing between the images */
+  justify-content: center; /* Centers the images horizontally */
+  flex-wrap: wrap; /* Allows wrapping to the next line if space is limited */
+}
+
+.article .figure-container .image-wrapper img {
+  display: inline-block; /* Ensures images are treated as inline-blocks */
+  margin: 0 auto; /* Centers images individually */
+  max-width: 100%; /* Ensures images don't overflow their container */
+  height: auto; /* Maintains image aspect ratio */
+}
+
+.article .figure-container .caption {
+  padding-top: 8px; /* Spacing between images and caption */
+  font-size: 14px; /* Caption font size */
+  line-height: 1.5em; /* Caption line height */
+  text-align: left; /* Aligns the caption text to the left */
+  color: #a8a8a8; /* Caption text color */
+  font-style: italic; /* Makes the caption text italic */
+  max-width: 100%; /* Ensures caption doesn't exceed container width */
+}
+
+.article .footnote {
+  line-height: 0;
+}
+.article div.highlight {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  line-height: 1.3em;
+}
+.article ul {
+  padding: 0 15px;
+}
+.article hr {
+  border-bottom: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  margin: 33px auto;
+  width: 70px;
+}
+#bibliography {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+#bibliography ol.bibliography {
+  padding-left: 15px;
+  padding-top: 30px;
+  font-size: 12px;
+  color: rgba(116, 116, 116, 0.5);
+}
+#blog {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#blog #intro {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+#blog .quote {
+  margin-bottom: 30px;
+}
+#blog .quote p {
+  margin-bottom: 5px;
+}
+#blog .post-date {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#blog .post-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#blog .post-title a {
+  font-size: 18px;
+  text-decoration: none;
+}
+#blog .post-title a:hover {
+  text-decoration: underline;
+}
+#blog .post-subtitle {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.5em;
+}
+#blog .year {
+  font-size: 18px;
+  position: relative;
+  right: 100px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin-bottom: -24px;
+}
+#blog #y2017.year,
+#blog #y2018.year {
+  margin-top: 0px;
+}
+hr {
+  border-top: #ccc;
+}
+/* Mobile Responsive Styles */
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0 7px;
+  }
+  
+  .wrap {
+    padding: 0 15px; /* Add horizontal padding */
+  }
+  
+  .front-matter {
+    padding: 15px 0; /* Reduce padding */
+  }
+  
+  .front-matter h1 {
+    font-size: 20px; /* Smaller title on mobile */
+    line-height: 1.3em;
+  }
+  
+  .front-matter h4 {
+    font-size: 14px; /* Smaller subtitle */
+  }
+  
+  .front-matter .bylines .byline {
+    margin-right: 15px; /* Reduce margin */
+    float: none; /* Stack bylines vertically on very small screens */
+  }
+  
+  .article {
+    font-size: 14px; /* Slightly smaller article text */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .article img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto;
+  }
+  
+  #blog .post-title a {
+    font-size: 16px; /* Smaller post titles */
+  }
+  
+  #blog .post-subtitle {
+    font-size: 13px;
+  }
+  
+  #blog .year {
+    position: static; /* Remove absolute positioning on mobile */
+    right: auto;
+    width: auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+  
+  .nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  pre, code {
+    font-size: 12px; /* Smaller code blocks */
+    overflow-x: auto; /* Allow horizontal scrolling for code */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0 5px;
+  }
+  
+  .wrap {
+    padding: 0 10px;
+  }
+  
+  .front-matter h1 {
+    font-size: 18px;
+  }
+  
+  .front-matter h4 {
+    font-size: 13px;
+  }
+  
+  .article {
+    font-size: 13px;
+  }
+  
+  #blog .post-title a {
+    font-size: 15px;
+  }
+}
+

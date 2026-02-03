@@ -1,0 +1,23 @@
+<div id="bibliography">
+  <ol>
+    {% for reference in site.scholar.cited %}
+      <li>
+        {% if site.scholar.style == "ieee" %}
+          {% comment %}
+          This is a hack to remove the reference number from the entry in
+          case 'ieee' style is used to format the reference.
+
+          The <span> is repaired by splitting on both the [ and the ] sign.
+          {% endcomment %}
+          {% assign ref = reference | split: "]" %}
+          {% assign pre_num = ref[0] | split: "[" %}
+          {% for item in pre_num limit:1 %}{{ item }}{% endfor %}{% for item in ref offset:1 %}{% if forloop.first == false %}[{{ item }}]{% endif %}{% endfor %}
+        {% else %}
+          {{ reference }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</div>
+
+<p>Test Bibliography Template3</p>
