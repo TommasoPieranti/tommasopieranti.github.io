@@ -1,0 +1,139 @@
+---
+# _data/refs.yml - Citazioni estratte da references.bib
+yong_stochastic_1999:
+  title: "Stochastic controls: Hamiltonian systems and HJB equations"
+  author: "Yong, Jiongmin and Zhou, Xun Yu"
+  year: "1999"
+  publisher: "Springer"
+  address: "New York"
+  isbn: "978-0-387-98723-1"
+  series: "Applications of mathematics"
+  number: "43"
+  language: "en"
+  shorttitle: "Stochastic controls"
+
+pardoux_adapted_1990:
+  title: "Adapted solution of a backward stochastic differential equation"
+  author: "Pardoux, E. and Peng, S.G."
+  year: "1990"
+  journal: "Systems & Control Letters"
+  doi: "10.1016/0167-6911(90)90082-6"
+  url: "https://linkinghub.elsevier.com/retrieve/pii/0167691190900826"
+  month: "jan"
+  language: "en"
+  issn: "01676911"
+  copyright: "https://www.elsevier.com/tdm/userlicense/1.0/"
+
+pontryagin_mathematical_1962:
+  title: "The mathematical theory of optimal processes."
+  author: "Pontryagin, L.S. and Boltyanskii, V. G. and Gamkrelidze, R. V. and Mishchenko, E. F."
+  year: "1962"
+  publisher: "Wiley"
+  address: "NY"
+
+yang_stochastic_2018:
+  title: "Stochastic maximum principle for optimal control problem with a stopping time cost functional"
+  author: "Yang, Shuzhen"
+  year: "2018"
+  doi: "10.48550/arXiv.1812.03474"
+  url: "http://arxiv.org/abs/1812.03474"
+  month: "dec"
+  publisher: "arXiv"
+  language: "en"
+  keywords: "Mathematics - Optimization and Control"
+
+yang_stochastic_2022:
+  title: "Stochastic maximum principle for optimal control problem with a stopping time cost functional"
+  author: "Yang, Shuzhen"
+  year: "2022"
+  journal: "International Journal of Control"
+  volume: "95"
+  number: "7"
+  pages: "1777--1788"
+  doi: "10.1080/00207179.2021.1872801"
+  url: "https://www.tandfonline.com/doi/full/10.1080/00207179.2021.1872801"
+  month: "jul"
+  language: "en"
+  issn: "0020-7179, 1366-5820"
+
+yang_varying_2020:
+  title: "A varying terminal time structure for stochastic optimal control under constrained condition"
+  author: "Yang, Shuzhen"
+  year: "2020"
+  journal: "International Journal of Robust and Nonlinear Control"
+  volume: "30"
+  number: "13"
+  pages: "5181--5204"
+  doi: "10.1002/rnc.5048"
+  url: "https://onlinelibrary.wiley.com/doi/10.1002/rnc.5048"
+  month: "sep"
+  language: "en"
+  issn: "1049-8923, 1099-1239"
+  abstract: "Summary In this study, we propose a varying terminal time structure for the optimal control problem under state constraints... The optimal pair of the optimal control model can be verified via this new stochastic maximum principle."
+
+tailgan:
+  title: "Tail-GAN: Learning to Simulate Tail Risk Scenarios"
+  author: "Rama Cont and Mihai Cucuringu and Renyuan Xu and Chao Zhang"
+  year: "2023"
+  eprint: "2203.01664"
+  archivePrefix: "arXiv"
+  primaryClass: "q-fin.RM"
+
+firstgan:
+  title: "Generative Adversarial Net"
+  author: "Ian J. Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu and David Warde-Farley and Sherjil Ozair and Aaron Courville and Yoshua Bengio"
+  year: "2014"
+  journal: "Proceedings of the International Conference on Neural Information Processing Systems"
+  pages: "2672--2680."
+  publisher: "NIPS"
+
+Lambert2008:
+  title: "Eliciting properties of probability distributions"
+  author: "Nicolas S Lambert and David M Pennock and Yoav Shoham"
+  year: "2008"
+  journal: "Proceedings of the 9th ACM Conference on Electronic Commerce"
+
+AOS1439:
+  title: "Higher order elicitability and Osband’s principle"
+  author: "Tobias Fissler and Johanna F. Ziegel"
+  year: "2016"
+  journal: "The Annals of Statistics"
+  volume: "44"
+  number: "4"
+  pages: "1680 -- 1707"
+  doi: "10.1214/16-AOS1439"
+  URL: "https://doi.org/10.1214/16-AOS1439"
+  publisher: "Institute of Mathematical Statistics"
+  keywords: "consistency, decision theory, elicitability, expected shortfall, point forecasts, propriety, scoring functions, scoring rules, spectral risk measures, value at risk"
+
+Acerbi2014:
+  title: "Back-testing expected shortfall"
+  author: "Carlo Acerbi and Balazs Szekely"
+  year: "2014"
+  journal: "Risk"
+
+stockmarketGAN:
+  title: "Stock Market Prediction Based on Generative Adversarial Network"
+  author: "Kang Zhang et al"
+  year: "2018"
+  journal: "IIKI 2018"
+
+lstm:
+  title: "Long short-term memory"
+  author: "Sepp Hochreiter, Jürgen Schmidhuber"
+  year: "1997"
+  journal: "Neural computation"
+  publisher: "MIT Press"
+
+zaremba2014recurrent:
+  title: "Recurrent neural network regularization"
+  author: "Zaremba, Wojciech and Sutskever, Ilya and Vinyals, Oriol"
+  year: "2014"
+  journal: "arXiv preprint arXiv:1409.2329"
+
+cooijmans2016recurrent:
+  title: "Recurrent Batch Normalization"
+  author: "Cooijmans, Tim and Ballas, Nicolas and Laurent, César and Gülçehre, Çağlar and Courville, Aaron"
+  year: "2016"
+  journal: "arXiv preprint arXiv:1603.09025"
+---
