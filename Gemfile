@@ -48,4 +48,4 @@ gem "bigdecimal", "~> 4.0"
 gem "observer"
 gem "logger"
 
-gem "jekyll-scholar"
+gem "jekyll-scholar", group: :jekyll_plugins
